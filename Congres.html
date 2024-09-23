@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raport Clienti Clinomic Romania, Congres GPATI 2024</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #6A4CAD; margin: 20px; color: white; }
+        label { font-weight: bold; color: white; }
+        input, textarea, select { width: 100%; padding: 8px; margin: 10px 0; background-color: #f1f1f1; border: 1px solid #ddd; color: #333; }
+        input:focus, textarea:focus, select:focus { background-color: #ddd; }
+        .container { width: 80%; margin: 0 auto; }
+        .btn { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        .btn:hover { background-color: #45a049; }
+        h1, h2 { color: white; }
+        .header { display: flex; justify-content: space-between; align-items: center; }
+        .section { margin-top: 30px; padding: 20px; border: 1px solid #ddd; background-color: #5E3D99; border-radius: 10px; }
+        .section-title { font-size: 1.4em; margin-bottom: 10px; cursor: pointer; color: #FFF; }
+        .section-content { display: none; margin-top: 15px; }
+        .section:hover { background-color: #4A3278; }
+        .toggle-btn { font-size: 0.8em; color: white; background: #4CAF50; padding: 5px 10px; border: none; cursor: pointer; border-radius: 5px; }
+        .toggle-btn:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1><b>Raport Clienti Clinomic Romania</b></h1>     
+        <h2>Congres GPATI 2024</h2>
+    </div>
+
+    <!-- Section: Informatii Generale Spital -->
+    <div class="section">
+        <div class="section-title" onclick="toggleSection(this)">Informatii Generale Spital 
+            <button class="toggle-btn">+/-</button>
+        </div>
+        <div class="section-content">
+              <label for="spital"><b>Spital:</b></label>
+            <input list="spitale" id="spital" name="spital" placeholder="Tastează sau selectează spitalul">
+            <datalist id="spitale">
+                 <option value="Spitalul Judetean de Urgenta Alba Iulia">
+    <option value="Spitalul de Pneumoftiziologie Aiud">
+    <option value="Spitalul Municipal Blaj">
+    <option value="Spitalul Municipal Aiud">
+    <option value="Spitalul Orasenesc Abrud">
+    <option value="Spitalul Orasenesc Campeni">
+    <option value="Spitalul Municipal Sebes">
+    <option value="Spitalul Orasenesc Cugir">
+    <option value="Spitalul de Boli Cronice Campeni">
+    <option value="SC Centrul Medical Laura Catana SRL">
+    <option value="Spitalul Clinic Judetean de Urgenta Arad">
+    <option value="Spitalul de Psihiatrie Mocrea">
+    <option value="Spitalul de Psihiatrie Capalnas">
+    <option value="Spitalul Orasenesc Lipova">
+    <option value="Spitalul Boli Cronice Sebis">
+    <option value="Spitalul Orasenesc Ineu">
+    <option value="Spitalul de Recuperare Neuromotorie Dezna">
+    <option value="SC Genesys Medical Clinic SRL">
+    <option value="SC Laser System SRL">
+    <option value="SC Terapeutica SA-Spital Sf Gheorghe Chisineu Cris">
+    <option value="SC Centrul Medical 'Speranta pentru viata' SRL">
+    <option value="Spitalul de Recuperare Bradet">
+    <option value="Spitalul Judetean de Urgenta Pitesti">
+    <option value="Spitalul de Pediatrie Pitesti">
+    <option value="Spitalul Municipal Campulung">
+    <option value="Spitalul Municipal Curtea de Arges">
+    <option value="Spitalul de Pneumoftiziologie Uordeni">
+    <option value="Spitalul de Pneumoftiziologie 'Sf.Andrei' Valea Iasului">
+    <option value="Spitalul de Pneumoftiziologie Campulung">
+    <option value="Spitalul de Psihiatrie 'Sf.Maria' Vedea">
+    <option value="Spitalul Orasenesc 'Regele Carol I' Costesti">
+    <option value="Spitalul Orasenesc 'Sf.Spiridon' Mioveni">
+    <option value="Spitalul de Geriatrie si Boli Cronice 'C.B.Stolnici' Stefanesti">
+    <option value="Spitalul Penitenciar Colibasi">
+    <option value="Spitalul Militar de Urgenta 'Dr.Ion Jianu' Pitesti">
+    <option value="SC Centrul Medical Sf Nicolae Pitesti">
+    <option value="SC Muntenia Medical Competences SA">
+    <option value="Spitalul de Boli Cronice Calinesti">
+    <option value="Sanatoriul Balnear Slanic Moldova">
+    <option value="Spitalul Judetean de Urgenta Bacau">
+    <option value="Spitalul de Pediatrie Bacau">
+    <option value="Spitalul de Pneumoftiziologie Bacau">
+    <option value="Spitalul Municipal Onesti">
+    <option value="Spitalul Municipal de Urgenta Moinesti">
+    <option value="Spitalul Orasenesc Buhusi">
+    <option value="SC Polimed SRL Podu Turcului">
+    <option value="SC Malp SRL Moinesti">
+    <option value="SC Eldimed Materna SRL Bacau">
+    <option value="Psihomed Laboratory SRL">
+    <option value="SC Clinica Palade SRL Bacau">
+    <option value="SC Medical Praxis SRL Bacau">
+    <option value="Spital Penitenciar Tirgu Ocna">
+    <option value="SC Magu SA Tirgu Ocna">
+    <option value="Spitalul Orasenesc Ioan Lascar Comanesti">
+    <option value="SC New Central Med SRL">
+    <option value="Spitalul Asociatia Lumina - Centrul de ingrijiri paliative pentru copii">
+    <option value="Spitalul de Psihiatrie si pentru Masuri de Siguranta Stei">
+    <option value="Spitalul Clinic de Recuperare Med.Baile Felix">
+    <option value="Spitalul Clinic Judetean de Urgenta Bihor">
+    <option value="Spitalul de Psihiatrie Nucet">
+    <option value="Spitalul Municipal Salonta">
+    <option value="Spitalul Municipal 'Dr.Pop Mircea' Marghita">
+    <option value="Spitalul Orasenesc Alesd">
+    <option value="Spitalul Municipal 'Episcop N.Popovici' Beius">
+    <option value="Spitalul Clinic de Urgenta Avram Iancu Oradea">
+    <option value="SC Pelican Impex SRL-Centrul Medical Oradea">
+    <option value="Spital Clinic CF Oradea">
+    <option value="Spitalul Orasenesc Stei">
+    <option value="SC Euclid SRL Oradea">
+    <option value="SC CLINICA NEWMEDICS SRL Oradea">
+    <option value="SC President Premium Medcenter SA">
+    <option value="Spitalul Judetean de Urgenta Bistrita">
+    <option value="Spitalul Orasenesc Nasaud 'Dr.George Trifon'">
+    <option value="Spitalul Orasenesc Beclean">
+    <option value="Preventoriul TBC Ilisua">
+    <option value="SC Clinica Sanovil SRL Bistrita">
+    <option value="Spitalul Judetean de Urgenta 'Mavromati' Botosani">
+    <option value="Spitalul de Obstetrica-Ginecologie Botosani">
+    <option value="Spitalul de Copii Botosani">
+    <option value="Spitalul de Psihiatrie Botosani">
+    <option value="Sanatoriul de Neuropsihiatrie Podriga">
+    <option value="Spitalul de Recuperare 'Sf.Gheorghe' Botosani">
+    <option value="Spitalul de Pneumoftiziologie Botosani">
+    <option value="Spitalul Municipal Dorohoi">
+    <option value="Sanatoriul de Neuroze Predeal">
+    <option value="Spitalul Clinic Judetean de Urgenta Brasov">
+    <option value="Spitalul Clinic de Copii Brasov">
+    <option value="Spitalul Clinic de Obstetrica-Ginecologie 'Dr.I.A.Sbarcea' Brasov">
+    <option value="Spitalul Clinic de Pneumoftiziologie si Boli Infectioase Brasov">
+    <option value="Spitalul de Psihiatrie si Neurologie Brasov">
+    <option value="Spitalul de Pneumoftiziologie Brasov">
+    <option value="Spitalul Municipal Fagaras">
+    <option value="Spitalul Orasenesc 'Dr.C.T.Sparchez' Zarnesti">
+    <option value="Spitalul Orasenesc Rupea">
+    <option value="Spitalul Municipal Codlea">
+    <option value="Spital General CF Brasov">
+    <option value="Spital Militar de Urgenta Regina Maria Brasov">
+    <option value="Fundatia Hospice-Casa Sperantei">
+    <option value="SC Vital Med Center SRL">
+    <option value="SC Clinica New Medics SRL">
+    <option value="Clinica Eva SC Rurmedical SRL">
+    <option value="SC Clinicile ICCO Brasov">
+    <option value="SC Clinicile ICCO Ortopedie Brasov">
+    <option value="Spitalul Sf. Constantin Brasov">
+    <option value="Spitalul si Policlinica de Diagnostic Rapid SA Brasov">
+    <option value="SC ONCO CARD SRL - Centrul de Diagnostic si Tratament Oncologic Brasov">
+    <option value="Asociatia-Centrul Rezidential pentru Varstnici 'MARIA'">
+    <option value="Spitalul Municipal Sacele">
+    <option value="Spitalul de Urgenta Judetean Braila">
+    <option value="Spitalul de Obstetrica-Ginecologie Braila">
+    <option value="Spitalul de Pneumoftiziologie Braila">
+    <option value="Spitalul de Psihiatrie 'Sf.Pantelimon' Braila">
+    <option value="Spitalul Orasenesc Faurei">
+    <option value="Centrul Integrat de Medicina Paliativa Braila">
+    <option value="Spitalul de Psihiatrie si pentru masuri de siguranta Sapoca">
+    <option value="Spitalul Judetean de Urgenta Buzau">
+    <option value="Spitalul Municipal Ramnicu Sarat">
+    <option value="Spitalul Orasenesc Nehoiu">
+    <option value="Spitalul de Boli Cronice Smeeni">
+    <option value="SC Sfantu Sava SRL Buzau">
+    <option value="SC Ecomed SRL Vintila Voda">
+    <option value="Institutul Oncologic 'Prof. Dr. Al. Trestioreanu' Bucuresti">
+    <option value="Institutul pentru Ocrotirea Mamei si Copilului 'Prof.Dr. A. Rusescu'">
+    <option value="Institutul National de Endocrinologie 'C.I. Parhon' Bucuresti">
+    <option value="Institutul National de Geriatrie si Gerontologie 'Ana Aslan' Bucuresti">
+    <option value="Institutul National de Boli Infectioase 'Prof.Dr. Matei Bals' Bucuresti">
+    <option value="Institutul de Fonoaudiologie si Chirurgie Functionala ORL 'Prof.dr. D. Hociota' Bucuresti">
+    <option value="Institutul de Pneumoftiziologie 'Marius Nasta' Bucuresti">
+    <option value="Institutul National de Neurologie si Boli Neurovasculare Bucuresti">
+    <option value="Institutul National de Diabet, Nutritie si Boli Metabolice 'Prof.Dr.N. Paulescu' Bucuresti">
+    <option value="Institutul National de Recuperare, Medicina Fizica si Balneoclimatologie Bucuresti">
+    <option value="Institutul Clinic Fundeni Bucuresti">
+    <option value="Institutul de Urgenta pentru Boli Cardiovasculare 'Prof.Dr.C.C. Iliescu' Bucuresti">
+    <option value="Centrul National Clinic de Recuperare Neuropsihomotorie pentru Copii 'Dr. N. Robanescu'">
+    <option value="Spitalul Clinic 'Sf. Maria' Bucuresti">
+    <option value="Spitalul Clinic 'Filantropia' Bucuresti">
+    <option value="Spitalul Clinic de Nefrologie 'Dr. Carol Davila' Bucuresti">
+    <option value="Spitalul Clinic de Chirurgie Oro-Maxilo-Faciala 'Prof. Dr. D. Theodorescu' Bucuresti">
+    <option value="Centrul de Boli Reumatismale 'Dr. Ion Stoia' Bucuresti">
+    <option value="Spitalul Clinic 'Dr.Ion Cantacuzino' Bucuresti">
+    <option value="Spitalul Clinic 'Colentina' Bucuresti">
+    <option value="Spitalul Clinic 'Nicolae Malaxa' Bucuresti">
+    <option value="Spitalul Clinic de Ortopedie si TBC Osteoarticular 'Foișor' București">
+    <option value="Spitalul Clinic 'Coltea' Bucuresti">
+    <option value="Spitalul Clinic de Boli Infectioase si Tropicale 'Dr. Victor Babes' Bucuresti">
+    <option value="Spitalul Clinic de Dermato-Venerologie 'Prof.Dr.S. Longhin' Bucuresti">
+    <option value="Spitalul de Boli Cronice 'Sf.Luca' Bucuresti">
+    <option value="Spitalul Clinic 'Prof.dr.Th. Burghele' Bucuresti">
+    <option value="Spitalul Clinic de Obstetrica-Ginecologie 'Prof.Dr. P.Sarbu' Bucuresti">
+    <option value="Spitalul Clinic de Urgenta Bucuresti">
+    <option value="Spitalul Clinic de Urgenta pentru Copii 'Grigore Alexandrescu'">
+    <option value="Spitalul Clinic de Urgente Oftalmologice Bucuresti">
+    <option value="Spitalul Clinic de Urgenta de Chirurgie Plastica, Reparatorie si Arsuri Bucuresti">
+    <option value="Spitalul Clinic de Urgenta 'Sf.Pantelimon' Bucuresti">
+    <option value="Spitalul de Pneumoftiziologie 'Sf. Stefan' Bucuresti">
+    <option value="Spitalul Clinic de Copii 'Dr.Victor Gomoiu' Bucuresti">
+    <option value="Spitalul de Psihiatrie Titan 'Dr. Constantin Gorgos' Bucuresti">
+    <option value="Spitalul Clinic de Urgenta pentru Copii 'M.S. Curie' Bucuresti">
+    <option value="Spitalul Clinic de Psihiatrie 'Alexandru Obregia' Bucuresti">
+    <option value="Spitalul Clinic de Urgenta 'Bagdasar-Arseni' Bucuresti">
+    <option value="Spitalul Clinic de Urgenta 'Sf. Ioan' Bucuresti">
+    <option value="Spitalul Universitar de Urgenta Bucuresti">
+    <option value="Centrul de Evaluare si Tratament a Toxicodependentelor pentru Tineri 'Sf. Stelian' Bucuresti">
+    <option value="Delta Health Care SRL">
+    <option value="Euroclinic Hospital SA">
+    <option value="SC Centrul Medical Unirea SRL">
+    <option value="Clinica de Angiografie si Terapia Endovasculara Hemodinamic SRL">
+    <option value="Spitalul Oftalmologic Euroeye SRL">
+    <option value="Spitalul SC Medlife SA Bucuresti">
+    <option value="Spitalul Penitenciar Rahova">
+    <option value="Spitalul Clinic CF nr. 2 Bucuresti">
+    <option value="Spitalul Prof Dr Constantin Angelescu - Ministerul de Justitie">
+    <option value="Spitalul Univ. de Urgenta Militar Central 'Dr. Carol Davila' Bucuresti">
+    <option value="Spitalul Clinic CF nr. 1 'Witting' Bucuresti">
+    <option value="Centrul de Sanatate RATB Bucuresti">
+    <option value="Centrul Clinic de Urgenta Boli Cardiovasculare al Armatei 'Dr. Carol Zamfir' Bucuresti">
+    <option value="Spitalul de Urgenta 'Prof. Dr. Dimitrie Gerota' Bucuresti">
+    <option value="Spitalul Clinic de Urgenta 'Prof. Dr. Agrippa Ionescu' Bucuresti">
+    <option value="Spitalul Universitar de Urgenta Elias Bucuresti">
+    <option value="Centrul Medical 'PRAIN' Pentru redarea auzului si infatisarii normale SRL">
+    <option value="SC Munposan SRL Bucuresti">
+    <option value="SC Clinica Sf. Lucia Bucuresti">
+    <option value="SC Binafarm SRL Bucuresti">
+    <option value="SC Tinos Clinic SRL Bucuresti">
+    <option value="SC SANADOR SRL - Spitalul SANADOR">
+    <option value="Spitalul Proestetica Hospital Bucuresti">
+    <option value="Centrul Medical New Life SRL Bucuresti">
+    <option value="SC GRAL MEDICAL SRL Bucuresti">
+    <option value="SC Medicover Hospital SA Bucuresti">
+    <option value="SC Centrul Medical 'Policlinico Di Monza' SRL Bucuresti">
+    <option value="Spitalul General al Fundatiei 'Dr. Victor Babes' Bucuresti">
+    <option value="Fundatia 'Bucuria Ajutorului' - Centrul de ingrijiri paliative Sf. Nectarie">
+    <option value="SC Promed System SRL - Spital Wellborn Bucuresti">
+    <option value="SC Centrul Medical MED-AS 2003 SRL Bucuresti">
+    <option value="SC Medicable Life Hospital SRL Bucuresti">
+    <option value="SC Clinica Angiomed SRL Bucuresti">
+    <option value="SC Dynamic Medical SRL Bucuresti">
+    <option value="Fundatia HOSPICE Casa Sperantei Bucuresti">
+    <option value="SC Genesys Fertility Center SRL Bucuresti">
+    <option value="Spitalul Judetean de Urgenta Resita">
+    <option value="Spitalul Municipal de Urgenta Caransebes">
+    <option value="Spitalul Orasenesc Otelul Rosu">
+    <option value="Spitalul Orasenesc Oravita">
+    <option value="Spitalul Orasenesc Moldova Noua">
+    <option value="Centrul de Recuperare Neuromotorie Pro Vitam">
+    <option value="Spitalul Judetean de Urgenta Calarasi">
+    <option value="Spitalul de Pneumoftiziologie Calarasi">
+    <option value="Spitalul de Psihiatrie Sapunari">
+    <option value="Spitalul Municipal Oltenita">
+    <option value="Spitalul Orasenesc Lehliu-Gara">
+    <option value="Spitalul Clinic Judetean de Urgenta Cluj-Napoca">
+    <option value="Spitalul Clinic de Urgenta pentru Copii Cluj-Napoca">
+    <option value="Institutul Clinic de Urologie si Transplant Renal Cluj-Napoca">
+    <option value="Institutul Inimii de Urgenta pentru Boli Cardiovasculare 'N. Stancioiu' Cluj-Napoca">
+    <option value="Institutul Oncologic 'Prof.Dr.Ion Chiricuta' Cluj-Napoca">
+    <option value="Spitalul Clinic de Pneumoftiziologie 'Leon Daniello' Cluj-Napoca">
+    <option value="Spitalul Clinic de Boli Infectioase Cluj-Napoca">
+    <option value="Spitalul Clinic de Recuperare Cluj-Napoca">
+    <option value="Spitalul de Boli Psihice Cronice Borsa">
+    <option value="Spitalul Clinic Municipal Cluj-Napoca">
+    <option value="Spitalul Municipal Dej">
+    <option value="Spitalul Municipal Turda">
+    <option value="Spitalul Municipal Campia Turzii">
+    <option value="Spitalul Municipal Gherla">
+    <option value="Spitalul Orasenesc Huedin">
+    <option value="Institutul Regional de Gastroenterologie-Hepatologie Prof. Dr. Octavian Fodor Cluj">
+    <option value="Spital Clinic Universitar CF Cluj-Napoca">
+    <option value="Spitalul Militar de Urgenta 'Dr. Constantin Papilian' Cluj Napoca">
+    <option value="Spitalul SC Eurotrat SRL Gherla">
+    <option value="Spital Penitenciar Dej">
+    <option value="SC Art Estet SRL - Spital 'ARTIS 3'">
+    <option value="Asociatia 'Sfantul Nectarie' - Centrul de ingrijiri Paliative 'Sfantul Nectarie' Cluj-Napoca">
+    <option value="SC Polaris Medical Clinica de tratament si recuperare SA">
+    <option value="SC Rechinul Impex SRL Cluj - Napoca">
+    <option value="Spitalul ANGIOCARE SRL Cluj">
+    <option value="Spitalul TVM MED SERV SRL Cluj">
+    <option value="Spitalul Clinic de Recuperare, Medicina Fizica si Balneologie Eforie Nord">
+    <option value="Sanatoriul Balnear si de Recuperare Mangalia">
+    <option value="Sanatoriul Balnear si de Recuperare Techirghiol">
+    <option value="Spitalul Clinic Judetean de Urgenta Constanta">
+    <option value="Spitalul Clinic de Pneumoftiziologie Constanta">
+    <option value="Spitalul de Ortopedie, Traumatologie si Recuperare Medicala - Eforie Sud">
+    <option value="Spitalul de Ftiziologie Agigea">
+    <option value="Spitalul Clinic de Boli Infectioase Constanta">
+    <option value="Spitalul Municipal Mangalia">
+    <option value="Spitalul Municipal Medgidia">
+    <option value="Spitalul Orasenesc Cernavoda">
+    <option value="Spitalul Orasenesc Harsova">
+    <option value="Spital Clinic CF Constanta">
+    <option value="Spitalul Militar de Urgenta 'Alexandru Gafencu' Constanta">
+    <option value="Spital Penitenciar Poarta Alba Constanta">
+    <option value="SC Euromaterna SA Constanta">
+    <option value="SC Isis Medical Center SRL Constanta">
+    <option value="Centru Medical Medstar 2000 SRL Constanta">
+    <option value="SC ASCLEPIOS SRL Constanta - Sanatoriu Balnear Vraja Marii Eforie Sud">
+    <option value="SC Medical Analysis SRL Constanta">
+    <option value="Centrul de ingrijiri Paliative Casa Soarelui">
+    <option value="SC Rocomedicor SRL Constanta">
+    <option value="SC Complex Balnear si de Recuperare C.A.A. SRL din Techirghiol">
+    <option value="SC Ovidius Clinical Hospital SRL Constanta">
+    <option value="Asociatia Bunicul si Bunica, Centrul de ingrijiri Paliative, Cumpana">
+    <option value="Spitalul de Recuperare Cardiovasculara 'Dr. Benedek Geza' Covasna">
+    <option value="Centrul de Patologie Neuromusculara 'Radu Horlea' Valcele">
+    <option value="Spitalul Judetean de Urgenta 'Dr. Fogolyan Kristof' Sfantu Gheorghe">
+    <option value="Spitalul Municipal Targu Secuiesc">
+    <option value="Spitalul Orasenesc Covasna">
+    <option value="Spitalul Orasenesc Baraolt">
+    <option value="SC Andimex SRL Sancrai">
+    <option value="Spitalul Judetean de Urgenta Targoviste">
+    <option value="Spitalul Orasenesc Gaesti">
+    <option value="Spitalul Municipal Moreni">
+    <option value="Spitalul Orasenesc Pucioasa">
+    <option value="Spitalul de Psihiatrie Poiana Mare">
+    <option value="Spitalul Clinic Judetean de Urgenta Craiova">
+    <option value="Spitalul de Pneumoftiziologie Leamna">
+    <option value="Spitalul Orasenesc 'Asezamintele Brancovenesti' Dabuleni">
+    <option value="Spitalul Clinic Municipal 'Filantropia' Craiova">
+    <option value="Spitalul Clinic de Boli Infectioase si Pneumoftiziologie Craiova">
+    <option value="Spitalul Clinic de Neuropsihiatrie Craiova">
+    <option value="Spitalul Filisanilor - Filiasi">
+    <option value="Spitalul Municipal Bailesti">
+    <option value="Spitalul Municipal Calafat">
+    <option value="Spitalul Orasenesc Segarcea">
+    <option value="Spitalul Clinic CF Craiova">
+    <option value="Spitalul Clinic de Urgenta Militar 'Dr. Stefan Odobleja' Craiova">
+    <option value="Centrul Medical Mogo SRL Craiova">
+    <option value="SC Topmedical SRL Craiova">
+    <option value="SC Top Med Buna Vestire SRL Craiova">
+    <option value="SC EiffelMed SRL Craiova">
+    <option value="SC Rogadent SRL Craiova">
+    <option value="SC Onioptic Medical P.D.SRL Craiova">
+    <option value="SC Centrul Medical Pheonix SRL Craiova">
+    <option value="SC Centrul Medical de Ingrijiri Paliative 'Sf. Elena' SRL Craiova">
+    <option value="SC Centrul Medical Galaxy Med SRL Craiova">
+    <option value="SC Centrul Medical 'Sf. Antonie' SRL Craiova">
+    <option value="Spitalul Dr. Ianoşi SRL Craiova">
+    <option value="Spitalul Clinic Judetean de Urgenta 'Sf.Apostol Andrei' Galati">
+    <option value="Spitalul de Pneumoftiziologie Galati">
+    <option value="Spitalul de Boli Infectioase 'Cuvioasa Parascheva' Galati">
+    <option value="Spitalul Clinic de Urgenta pentru Copii 'Sf. Ioan' Galati">
+    <option value="Spitalul de Obstetrica-Ginecologie 'Buna Vestire' Galati">
+    <option value="Spitalul de Psihiatrie 'Elisabeta Doamna' Galati">
+    <option value="Spitalul Municipal 'Anton Cincu' Tecuci">
+    <option value="Spitalul Orasenesc Targu Bujor">
+    <option value="Spitalul General Cai Ferate Galati">
+    <option value="Spitalul Militar de Urgenta 'Dr. Aristide Serfioti' Galati">
+    <option value="Spitalul Judetean de Urgenta Giurgiu">
+    <option value="Spitalul de Psihiatrie Vadu Lat">
+    <option value="Spitalul de Pneumoftiziologie Izvoru">
+    <option value="Spitalul de Boli Infectioase Singureni">
+    <option value="Spitalul Orasenesc Bolintin Vale">
+    <option value="Quality Compas SRL Giurgiu">
+    <option value="Spitalul Judetean de Urgenta Targu Jiu">
+    <option value="Spitalul de Pneumoftiziologie 'Tudor Vladimirescu' Runcu">
+    <option value="Spitalul Municipal Motru">
+    <option value="Spitalul Orasenesc Novaci">
+    <option value="Spitalul Orasenesc Rovinari">
+    <option value="Spitalul Orasenesc Targu Carbunesti">
+    <option value="Spitalul Orasenesc Turceni">
+    <option value="Spitalul Orasenesc Bumbesti-Jiu">
+    <option value="Spitalul Judetean de Urgenta Miercurea Ciuc">
+    <option value="Spitalul de Psihiatrie Tulghe">
+    <option value="Spitalul Municipal Odorheiu Secuiesc">
+    <option value="Spitalul Municipal Gheorghieni">
+    <option value="Spitalul Municipal Toplita">
+    <option value="Spitalul de Psihiatrie Zam">
+    <option value="Spitalul Judetean de Urgenta Deva">
+    <option value="Sanatoriul de Pneumoftiziogie Geoagiu">
+    <option value="Sanatoriul de Pneumoftiziologie Brad">
+    <option value="Spitalul Municipal 'Dr. A. Simionescu' Hunedoara">
+    <option value="Spitalul de Urgenta Petrosani">
+    <option value="Spitalul Municipal Orastie">
+    <option value="Spitalul Municipal Brad">
+    <option value="Spitalul Orasenesc Hateg">
+    <option value="Spitalul Municipal Lupeni">
+    <option value="Spitalul Municipal Vulcan">
+    <option value="Spitalul General CF Simeria">
+    <option value="SC Clinica de Recuperare Neuromotorie 'Sf. Andrei' Hunedoara">
+    <option value="Spitalul Judetean de Urgenta Slobozia">
+    <option value="Spitalul Municipal Urziceni">
+    <option value="Spitalul Municipal Fetesti">
+    <option value="Spitalul Orasenesc Tandarei">
+    <option value="Institutul de Boli Cardiovasculare 'Prof.Dr.G.I.M. Georgescu' Iasi">
+    <option value="Spitalul de Psihiatrie si pentru Masuri de Siguranta Padureni - Grajduri">
+    <option value="Spitalul Clinic de Psihiatrie 'Socola' Iasi">
+    <option value="Spitalul Clinic de Urgenta 'Prof.Dr.Nicolae Oblu' Iasi">
+    <option value="Spitalul Clinic de Urgenta pentru Copii 'Sf. Maria' Iasi">
+    <option value="Spitalul Clinic de Obstetrica - Ginecologie 'Elena Doamna' Iasi">
+    <option value="Spitalul Clinic de Boli Infectioase 'Sf.Paraschiva' Iasi">
+    <option value="Spitalul Clinic de Obstetrica-Ginecologie 'Cuza Voda' Iasi">
+    <option value="Spitalul Clinic de Pneumoftiziologie Iasi">
+    <option value="Spitalul Clinic Judetean de Urgenta 'Sf.Spiridon' Iasi">
+    <option value="Spitalul Clinic 'Dr.C.I.Parhon' Iasi">
+    <option value="Spitalul Clinic de Recuperare Iasi">
+    <option value="Spitalul Municipal Pascani">
+    <option value="Spitalul Orasenesc Harlau">
+    <option value="Preventoriul TBC pentru Copii Deleni">
+    <option value="Spitalul Clinic Militar de Urgenta Iasi">
+    <option value="Spitalul General CF Pascani">
+    <option value="Spitalul Clinic CF Iasi">
+    <option value="Spitalul de Cardiologie Arcadia Iasi">
+    <option value="Spitalul Providenta Iasi">
+    <option value="Memory Hospital Comuna Valea Lupului Iasi">
+    <option value="SC Arcadia Hospital SRL Iasi">
+    <option value="Institutul Regional de Oncologie Iasi">
+    <option value="Centrul Medical 'Dr. Micu Vasile' Iasi">
+    <option value="SC Centrul de Oncologie Euroclinic SRL Iasi">
+    <option value="SC Top Medical Cronic SRL Iasi">
+    <option value="Spitalul de Boli Cronice 'Sf.Ioan' Targu Frumos">
+    <option value="Spitalul Clinic Judetean de Urgenta Ilfov">
+    <option value="Spitalul de Psihiatrie 'Eftimie Diamandescu' Balaceanca">
+    <option value="Spitalul Penitenciar Jilava">
+    <option value="Spital SC Oxxygene Med Plus SRL Otopeni">
+    <option value="Centrul de ingrijiri Paliative 'Sf Irina' Voluntari">
+    <option value="Spitalul de Obstetrica si Ginecologie Buftea">
+    <option value="SC Cardio-Rec SRL Ilfov">
+    <option value="Spitalul de Recuperare Sorstea Ilfov">
+    <option value="Spitalul Judetean de Urgenta 'Dr. Constantin Opris' Baia Mare">
+    <option value="Spitalul de Boli Infectioase si Psihiatrie Baia Mare">
+    <option value="Spitalul de Pneumoftiziologie Baia Mare">
+    <option value="Spitalul Municipal Sighetu Marmatiei">
+    <option value="Spitalul Orasenesc Viseul de Sus">
+    <option value="Spitalul Orasenesc Targu Lapus">
+    <option value="Spitalul de Psihiatrie Cavnic">
+    <option value="SC Euromedica Hospital SA Baia Mare">
+    <option value="SC Che Cosmedica SRL Baia Mare">
+    <option value="SC Clinica Somesan SRL Baia Mare">
+    <option value="SC Sim Cronic Clinic SRL - Centrul Medical 'Sf. Alexandru' Baia Mare">
+    <option value="Spitalul Judetean de Urgenta Drobeta Turnu Severin">
+    <option value="Spitalul Municipal Orsova">
+    <option value="Spitalul Orasenesc Baia de Arama">
+    <option value="Spital General CF Drobeta Turnu Severin">
+    <option value="Spitalul Clinic Judetean de Urgenta Targu Mures">
+    <option value="Spitalul Clinic Judetean Mures">
+    <option value="Spitalul Municipal 'Dr. Ghe. Marinescu' Tarnaveni">
+    <option value="Preventoriul TBC Gornesti">
+    <option value="Spitalul Municipal 'Dr. Eugen Nicoara' Reghin">
+    <option value="Spitalul Municipal Sighisoara">
+    <option value="Spitalul Orasenesc 'Dr. Valer Russu' Ludus">
+    <option value="Spitalul Sovata-Niraj">
+    <option value="Spitalul Orasenesc Sangeorgiu de Padure">
+    <option value="SC Nova Vita Hospital Targu Mures">
+    <option value="SC Cosamext SRL - Centrul Medical Targu Mures">
+    <option value="SC Cardio Med SRL Targu Mures">
+    <option value="Centrul Medical Galenus SC Adriamed SRL Targu Mures">
+    <option value="SC Centrul Medical Topmed SRL Targu Mures">
+    <option value="SC Psihosan Serv SRL Targu Mures">
+    <option value="Institutul de Urgenta pentru Boli Cardiovasculare si Transplant Targu Mures">
+    <option value="Spitalul SC Rehabcare SRL Targu Mures">
+    <option value="Spitalul Judetean de Urgenta Piatra Neamt">
+    <option value="Spitalul Municipal de Urgenta Roman">
+    <option value="Spitalul de Psihiatrie 'Sf. Nicolae' Roman">
+    <option value="Spitalul Orasenesc Targu Neamt">
+    <option value="Spitalul Orasenesc Bicaz">
+    <option value="Spital de Pneumoftiziologie Bisericani">
+    <option value="Spitalul Judetean de Urgenta Slatina">
+    <option value="Spitalul de Psihiatrie Cronici Schitu Greci">
+    <option value="Spitalul Municipal Caracal">
+    <option value="Spitalul Orasenesc Bals">
+    <option value="Spitalul Orasenesc Corabia">
+    <option value="Spitalul de Pneumoftiziologie Scornicesti">
+    <option value="Sanatoriul Balneoclimateric de Copii Busteni">
+    <option value="Spitalul Judetean de Urgenta Ploiesti">
+    <option value="Spitalul de Obstetrica-Ginecologie Ploiesti">
+    <option value="Spitalul Municipal Ploiesti">
+    <option value="Spitalul de Pediatrie Ploiesti">
+    <option value="Spitalul de Psihiatrie Voila">
+    <option value="Spitalul Municipal Campina">
+    <option value="Spitalul Orasenesc Valenii de Munte">
+    <option value="Spitalul de Ortopedie si Traumatologie Azuga">
+    <option value="Spitalul Orasenesc Balcesti">
+    <option value="Spitalul Orasenesc 'Sf.Filofteia' Mizil">
+    <option value="Spitalul Orasenesc Sinaia">
+    <option value="Spitalul de Boli Pulmonare Breaza">
+    <option value="Spitalul de Pneumoftiziologie Brad">
+    <option value="Spitalul de Pneumoftiziologie Floresti">
+    <option value="Spitalul Orasenesc Urlati">
+    <option value="Spitalul General Cai Ferate Ploiesti">
+    <option value="SC Bestmed Serv SRL">
+    <option value="SC Dentirad Hospital SRL">
+    <option value="Darius Medical Center">
+    <option value="SC Spital As Medica SRL">
+    <option value="SC Spital Lotus SRL">
+    <option value="SC WIA KINETO-DENT SRL">
+    <option value="SC Centrul Medical Mediurg SRL">
+    <option value="Centru Medical Sanconfind SRL">
+    <option value="Spitalul Uromed">
+    <option value="Spitalul Judetean de Urgenta Satu Mare">
+    <option value="Spitalul de Pneumoftiziologie Satu Mare">
+    <option value="Spitalul Municipal Carei">
+    <option value="Spitalul Orasenesc Negresti Oas">
+    <option value="SC Manitou Med SRL - Clinica Gynoprax">
+    <option value="SC Sara Clinic Recovery SRL">
+    <option value="Spitalul Judetean de Urgenta Zalau">
+    <option value="Spitalul Orasenesc Simleu Silvaniei">
+    <option value="Spitalul Orasenesc Jibou">
+    <option value="Spitalul de Boli Cronice Crasna">
+    <option value="Fundatia Acasa Zalau - Centrul de Recuperare Tratament si Ingrijire">
+    <option value="SC Salvosan Ciobanca SRL">
+    <option value="Spitalul Clinic Judetean de Urgenta Sibiu">
+    <option value="Spitalul de Psihiatrie 'Dr. Gheorghe Preda' Sibiu">
+    <option value="Spitalul de Pneumoftiziologie Sibiu">
+    <option value="Spitalul Clinic de Pediatrie Sibiu">
+    <option value="Spitalul Municipal Medias">
+    <option value="Spitalul Orasenesc Agnita">
+    <option value="Spitalul Militar de Urgenta 'Dr. Alexandru Augustin' Sibiu">
+    <option value="Spital General CF Sibiu">
+    <option value="Centrul de Ingrijiri Paliative Hospice Asociatia Carl Wolff">
+    <option value="SC Centrul Medical Polisano SRL Sibiu">
+    <option value="Spitalul Orasenesc Cisnadie">
+    <option value="SC Clinica Polisano SRL">
+    <option value="SC Clinica NewMedics SRL">
+    <option value="Spitalul Judetean de Urgenta Suceava 'Sf. Ioan cel Nou'">
+    <option value="Spitalul Municipal Campulung Moldovenesc">
+    <option value="Spitalul Municipal Falticeni">
+    <option value="Spitalul Municipal Radauti">
+    <option value="Spitalul Municipal Vatra Dornei">
+    <option value="Spitalul de Psihiatrie Campulung Moldovenesc">
+    <option value="Spitalul Orasenesc Gura Humorului">
+    <option value="Spitalul de Boli Cronice Siret">
+    <option value="Spitalul de Psihiatrie Cronici Siret">
+    <option value="Bethesda Suceava">
+    <option value="SC Servicii Paliative SRL Suceava">
+    <option value="SC Top Medical Cronic SRL - Centrul de Ingrijiri Paliative 'Sf. Luca'">
+    <option value="Spitalul Judetean de Urgenta Alexandria">
+    <option value="Spitalul de Psihiatrie Cronici Balaci">
+    <option value="Spitalul de Pneumoftiziologie Rosiorii de Vede">
+    <option value="Spitalul de Psihiatrie Poroschia">
+    <option value="Spitalul Municipal 'Caritas' Rosiorii de Vede">
+    <option value="Spitalul Municipal Turnu Magurele">
+    <option value="Spitalul Orasenesc Zimnicea">
+    <option value="SC Spitalul Orasenesc Videle SRL">
+    <option value="Spitalul Clinic Judetean de Urgenta Timisoara">
+    <option value="Spitalul de Psihiatrie si pentru Masuri de Siguranta Jebel">
+    <option value="Spitalul de Psihiatrie Gataia">
+    <option value="Centrul Medical Clinic de Evaluare si Recuperare pentru Copii si Tineri 'Cristian Serban' Buzias">
+    <option value="Institutul de Boli Cardiovasculare Timisoara">
+    <option value="Spitalul Clinic Municipal de Urgenta Timisoara">
+    <option value="Spitalul Clinic de Urgenta pentru Copii 'L. Turcanu' Timisoara">
+    <option value="Spitalul Clinic de Boli Infectioase si Pneumoftiziologie 'Dr. V. Babes' Timisoara">
+    <option value="Spitalul Clinic de Obstetrica-Ginecologie 'Dr. D. Popescu' Timisoara">
+    <option value="Spitalul Municipal Lugoj">
+    <option value="Spitalul Orasenesc Deta">
+    <option value="Spitalul Orasenesc Faget">
+    <option value="Spitalul Orasenesc Sannicolau Mare">
+    <option value="Spitalul 'Dr. Karl Diel' Jimbolia">
+    <option value="Spital Clinic CF Timisoara">
+    <option value="Centrul de Ingrijiri Paliative 'Casa Milostivirii Divine' Timisoara - Federatia Caritas">
+    <option value="Centrul de Oncologie - Asociatia Oncohelp Timisoara">
+    <option value="SC Medicor Clinics SRL Timisoara">
+    <option value="Spital SC Brol Medical Center SRL Timisoara">
+    <option value="Spitalul Militar de Urgenta 'Dr. Victor Popescu' Timisoara">
+    <option value="SC Gynatal SRL Timisoara">
+    <option value="SC Athena Hospital SRL Timisoara">
+    <option value="Centrul Medical 'Sfanta Maria' SRL Timisoara">
+    <option value="SC Materna Care SRL Timisoara">
+    <option value="SC Materna Care SRL - punct de lucru situat in Calea Aradului nr. 133 Timisoara">
+    <option value="SC Cordismed SRL Timisoara">
+    <option value="Kardinal One Medical Timisoara">
+    <option value="Spitalul (Leprozeria) Tichilesti">
+    <option value="Spitalul Judetean de Urgenta Tulcea">
+    <option value="Spitalul Orasenesc Macin">
+    <option value="SC Medical Center Spital SRL Tulcea">
+    <option value="Spitalul Judetean de Urgenta Vaslui">
+    <option value="Spitalul de Copii 'Sfantul Nicolae' Barlad">
+    <option value="Spitalul Municipal de Urgenta 'Elena Beldiman' Barlad">
+    <option value="Spitalul de Psihiatrie Murgeni">
+    <option value="Spitalul Municipal 'Dimitrie Castroian' Husi">
+    <option value="Spitalul Judetean de Urgenta Ramnicu Valcea">
+    <option value="Spitalul de Obstetrica-Ginecologie Ramnicu Valcea">
+    <option value="Spitalul de Pneumoftiziologie 'C. Anastasatu' Mihailesti">
+    <option value="Spitalul de Psihiatrie Dragoiesti">
+    <option value="Spitalul Municipal 'Costache Nicolescu' Dragasani">
+    <option value="Spitalul Orasenesc Brezoi">
+    <option value="Spitalul Orasenesc Horezu">
+    <option value="SC Amamed SRL Ramnicu Valcea">
+    <option value="SC Icarmd SRL Ramnicu Valcea">
+    <option value="SC Olanesti Riviera SA">
+    <option value="SC Rapitest Clinica SRL">
+    <option value="SC Balneomedcenter SA">
+    <option value="SC Doinamed SRL Ramnicu Valcea">
+    <option value="Spitalul Judetean de Urgenta 'Sf. Pantelimon' Focsani">
+    <option value="Spitalul de Psihiatrie Cronici Dumbraveni">
+    <option value="Spitalul Municipal Adjud">
+    <option value="Spitalul Orasenesc Panciu">
+    <option value="Spitalul Comunal Vidra">
+    <option value="SC Materna SRL Focsani">
+    <option value="Spitalul Militar de Urgenta 'Dr. Alexandru Ionescu' Focsani">
+</datalist>
+
+           <label for="locatie"><b>Locație:</b></label>
+<input list="locatii" id="locatie" name="locatie" placeholder="Tastează sau selectează orașul">
+<datalist id="locatii">
+  <option value="Abrud">Abrud</option>
+    <option value="Adjud">Adjud</option>
+    <option value="Agnita">Agnita</option>
+    <option value="Aiud">Aiud</option>
+    <option value="Alba Iulia">Alba Iulia</option>
+    <option value="Alesd">Alesd</option>
+    <option value="Alexandria">Alexandria</option>
+    <option value="Amara">Amara</option>
+    <option value="Anina">Anina</option>
+    <option value="Aninoasa">Aninoasa</option>
+    <option value="Arad">Arad</option>
+    <option value="Ardud">Ardud</option>
+    <option value="Avrig">Avrig</option>
+    <option value="Azuga">Azuga</option>
+    <option value="Babadag">Babadag</option>
+    <option value="Babeni">Babeni</option>
+    <option value="Bacau">Bacau</option>
+    <option value="Baia de Arama">Baia de Arama</option>
+    <option value="Baia de Aries">Baia de Aries</option>
+    <option value="Baia Mare">Baia Mare</option>
+    <option value="Baia Sprie">Baia Sprie</option>
+    <option value="Baicoi">Baicoi</option>
+    <option value="Baile Govora">Baile Govora</option>
+    <option value="Baile Herculane">Baile Herculane</option>
+    <option value="Baile Olanesti">Baile Olanesti</option>
+    <option value="Bailesti">Bailesti</option>
+    <option value="Baile Tusnad">Baile Tusnad</option>
+    <option value="Balan">Balan</option>
+    <option value="Balcesti">Balcesti</option>
+    <option value="Bals">Bals</option>
+    <option value="Baneasa">Baneasa</option>
+    <option value="Baraolt">Baraolt</option>
+    <option value="Barlad">Barlad</option>
+    <option value="Bechet">Bechet</option>
+    <option value="Beclean">Beclean</option>
+    <option value="Beius">Beius</option>
+    <option value="Berbesti">Berbesti</option>
+    <option value="Beresti">Beresti</option>
+    <option value="Bicaz">Bicaz</option>
+    <option value="Bistrita">Bistrita</option>
+    <option value="Blaj">Blaj</option>
+    <option value="Bocsa">Bocsa</option>
+    <option value="Boldesti-Scaeni">Boldesti-Scaeni</option>
+    <option value="Bolintin-Vale">Bolintin-Vale</option>
+    <option value="Borsa">Borsa</option>
+    <option value="Borsec">Borsec</option>
+    <option value="Botosani">Botosani</option>
+    <option value="Brad">Brad</option>
+    <option value="Bragadiru">Bragadiru</option>
+    <option value="Braila">Braila</option>
+    <option value="Brasov">Brasov</option>
+    <option value="Breaza">Breaza</option>
+    <option value="Brezoi">Brezoi</option>
+    <option value="Brosteni">Brosteni</option>
+    <option value="Bucecea">Bucecea</option>
+    <option value="Bucuresti">Bucuresti</option>
+    <option value="Budesti">Budesti</option>
+    <option value="Buftea">Buftea</option>
+    <option value="Buhusi">Buhusi</option>
+    <option value="Bumbesti-Jiu">Bumbesti-Jiu</option>
+    <option value="Busteni">Busteni</option>
+    <option value="Buzau">Buzau</option>
+    <option value="Buzias">Buzias</option>
+    <option value="Cajvana">Cajvana</option>
+    <option value="Calafat">Calafat</option>
+    <option value="Calan">Calan</option>
+    <option value="Calarasi">Calarasi</option>
+    <option value="Calimanesti">Calimanesti</option>
+    <option value="Campeni">Campeni</option>
+    <option value="Campia Turzii">Campia Turzii</option>
+    <option value="Campina">Campina</option>
+    <option value="Campulung">Campulung</option>
+    <option value="Campulung Moldovenesc">Campulung Moldovenesc</option>
+    <option value="Caracal">Caracal</option>
+    <option value="Caransebes">Caransebes</option>
+    <option value="Carei">Carei</option>
+    <option value="Cavnic">Cavnic</option>
+    <option value="Cazanesti">Cazanesti</option>
+    <option value="Cehu Silvaniei">Cehu Silvaniei</option>
+    <option value="Cernavoda">Cernavoda</option>
+    <option value="Chisineu-Cris">Chisineu-Cris</option>
+    <option value="Chitila">Chitila</option>
+    <option value="Ciacova">Ciacova</option>
+    <option value="Cisnadie">Cisnadie</option>
+    <option value="Cluj-Napoca">Cluj-Napoca</option>
+    <option value="Codlea">Codlea</option>
+    <option value="Comanesti">Comanesti</option>
+    <option value="Comarnic">Comarnic</option>
+    <option value="Constanta">Constanta</option>
+    <option value="Copsa Mica">Copsa Mica</option>
+    <option value="Corabia">Corabia</option>
+    <option value="Costesti">Costesti</option>
+    <option value="Covasna">Covasna</option>
+    <option value="Craiova">Craiova</option>
+    <option value="Cristuru Secuiesc">Cristuru Secuiesc</option>
+    <option value="Cugir">Cugir</option>
+    <option value="Curtea de Arges">Curtea de Arges</option>
+    <option value="Curtici">Curtici</option>
+    <option value="Dabuleni">Dabuleni</option>
+    <option value="Darabani">Darabani</option>
+    <option value="Darmanesti">Darmanesti</option>
+    <option value="Dej">Dej</option>
+    <option value="Deta">Deta</option>
+    <option value="Deva">Deva</option>
+    <option value="Dolhasca">Dolhasca</option>
+    <option value="Dorohoi">Dorohoi</option>
+    <option value="Draganesti-Olt">Draganesti-Olt</option>
+    <option value="Dragasani">Dragasani</option>
+    <option value="Dragomiresti">Dragomiresti</option>
+    <option value="Drobeta-Turnu Severin">Drobeta-Turnu Severin</option>
+    <option value="Dumbraveni">Dumbraveni</option>
+    <option value="Eforie">Eforie</option>
+    <option value="Fagaras">Fagaras</option>
+    <option value="Faget">Faget</option>
+    <option value="Falticeni">Falticeni</option>
+    <option value="Faurei">Faurei</option>
+    <option value="Fetesti">Fetesti</option>
+    <option value="Fieni">Fieni</option>
+    <option value="Fierbinti-Targ">Fierbinti-Targ</option>
+    <option value="Filiasi">Filiasi</option>
+    <option value="Flamanzi">Flamanzi</option>
+    <option value="Focsani">Focsani</option>
+    <option value="Frasin">Frasin</option>
+    <option value="Fundulea">Fundulea</option>
+    <option value="Gaesti">Gaesti</option>
+    <option value="Galati">Galati</option>
+    <option value="Gataia">Gataia</option>
+    <option value="Geoagiu">Geoagiu</option>
+    <option value="Gheorgheni">Gheorgheni</option>
+    <option value="Gherla">Gherla</option>
+    <option value="Ghimbav">Ghimbav</option>
+    <option value="Giurgiu">Giurgiu</option>
+     <option value="Giurgiu">Giurgiu</option>
+    <option value="Gura Humorului">Gura Humorului</option>
+    <option value="Harlau">Harlau</option>
+    <option value="Harsova">Harsova</option>
+    <option value="Hateg">Hateg</option>
+    <option value="Horezu">Horezu</option>
+    <option value="Huedin">Huedin</option>
+    <option value="Hunedoara">Hunedoara</option>
+    <option value="Husi">Husi</option>
+    <option value="Ianca">Ianca</option>
+    <option value="Iasi">Iasi</option>
+    <option value="Iernut">Iernut</option>
+    <option value="Ineu">Ineu</option>
+    <option value="Insuratei">Insuratei</option>
+    <option value="Intorsura Buzaului">Intorsura Buzaului</option>
+    <option value="Isaccea">Isaccea</option>
+    <option value="Jibou">Jibou</option>
+    <option value="Jimbolia">Jimbolia</option>
+    <option value="Lehliu Gara">Lehliu Gara</option>
+    <option value="Lipova">Lipova</option>
+    <option value="Liteni">Liteni</option>
+    <option value="Livada">Livada</option>
+    <option value="Ludus">Ludus</option>
+    <option value="Lugoj">Lugoj</option>
+    <option value="Lupeni">Lupeni</option>
+    <option value="Macin">Macin</option>
+    <option value="Magurele">Magurele</option>
+    <option value="Mangalia">Mangalia</option>
+    <option value="Marasesti">Marasesti</option>
+    <option value="Marghita">Marghita</option>
+    <option value="Medgidia">Medgidia</option>
+    <option value="Medias">Medias</option>
+    <option value="Miercurea Ciuc">Miercurea Ciuc</option>
+    <option value="Miercurea Nirajului">Miercurea Nirajului</option>
+    <option value="Miercurea Sibiului">Miercurea Sibiului</option>
+    <option value="Mihailesti">Mihailesti</option>
+    <option value="Milisauti">Milisauti</option>
+    <option value="Mioveni">Mioveni</option>
+    <option value="Mizil">Mizil</option>
+    <option value="Moinesti">Moinesti</option>
+    <option value="Moldova Noua">Moldova Noua</option>
+    <option value="Moreni">Moreni</option>
+    <option value="Motru">Motru</option>
+    <option value="Murfatlar">Murfatlar</option>
+    <option value="Murgeni">Murgeni</option>
+    <option value="Nadlac">Nadlac</option>
+    <option value="Nasaud">Nasaud</option>
+    <option value="Navodari">Navodari</option>
+    <option value="Negresti">Negresti</option>
+    <option value="Negresti-Oas">Negresti-Oas</option>
+    <option value="Negru Voda">Negru Voda</option>
+    <option value="Nehoiu">Nehoiu</option>
+    <option value="Novaci">Novaci</option>
+    <option value="Nucet">Nucet</option>
+    <option value="Ocna Mures">Ocna Mures</option>
+    <option value="Ocna Sibiului">Ocna Sibiului</option>
+    <option value="Ocnele Mari">Ocnele Mari</option>
+    <option value="Odobesti">Odobesti</option>
+    <option value="Odorheiu Secuiesc">Odorheiu Secuiesc</option>
+    <option value="Oltenita">Oltenita</option>
+    <option value="Onesti">Onesti</option>
+    <option value="Oradea">Oradea</option>
+    <option value="Orastie">Orastie</option>
+    <option value="Oravita">Oravita</option>
+    <option value="Orsova">Orsova</option>
+    <option value="Otelu Rosu">Otelu Rosu</option>
+    <option value="Otopeni">Otopeni</option>
+    <option value="Ovidiu">Ovidiu</option>
+    <option value="Panciu">Panciu</option>
+    <option value="Pancota">Pancota</option>
+    <option value="Pantelimon">Pantelimon</option>
+    <option value="Pascani">Pascani</option>
+    <option value="Patarlagele">Patarlagele</option>
+    <option value="Pecica">Pecica</option>
+    <option value="Petrila">Petrila</option>
+    <option value="Petrosani">Petrosani</option>
+    <option value="Piatra-Olt">Piatra-Olt</option>
+    <option value="Piatra Neamt">Piatra Neamt</option>
+    <option value="Pitesti">Pitesti</option>
+    <option value="Ploiesti">Ploiesti</option>
+    <option value="Plopeni">Plopeni</option>
+    <option value="Podu Iloaiei">Podu Iloaiei</option>
+    <option value="Pogoanele">Pogoanele</option>
+    <option value="Popesti-Leordeni">Popesti-Leordeni</option>
+    <option value="Potcoava">Potcoava</option>
+    <option value="Predeal">Predeal</option>
+    <option value="Pucioasa">Pucioasa</option>
+    <option value="Racari">Racari</option>
+    <option value="Radauti">Radauti</option>
+    <option value="Ramnicu Sarat">Ramnicu Sarat</option>
+    <option value="Ramnicu Valcea">Ramnicu Valcea</option>
+    <option value="Rasnov">Rasnov</option>
+    <option value="Recas">Recas</option>
+    <option value="Reghin">Reghin</option>
+    <option value="Resita">Resita</option>
+    <option value="Roman">Roman</option>
+    <option value="Rosiorii de Vede">Rosiorii de Vede</option>
+    <option value="Rovinari">Rovinari</option>
+    <option value="Roznov">Roznov</option>
+    <option value="Rupea">Rupea</option>
+    <option value="Sacele">Sacele</option>
+    <option value="Sacueni">Sacueni</option>
+    <option value="Salcea">Salcea</option>
+    <option value="Saliste">Saliste</option>
+    <option value="Salistea de Sus">Salistea de Sus</option>
+    <option value="Salonta">Salonta</option>
+    <option value="Sangeorgiu de Padure">Sangeorgiu de Padure</option>
+    <option value="Sangeorz-Bai">Sangeorz-Bai</option>
+    <option value="Sannicolau Mare">Sannicolau Mare</option>
+    <option value="Santana">Santana</option>
+    <option value="Sarmasu">Sarmasu</option>
+    <option value="Satu Mare">Satu Mare</option>
+    <option value="Saveni">Saveni</option>
+    <option value="Scornicesti">Scornicesti</option>
+    <option value="Sebes">Sebes</option>
+    <option value="Sebis">Sebis</option>
+    <option value="Segarcea">Segarcea</option>
+    <option value="Seini">Seini</option>
+    <option value="Sfantu Gheorghe">Sfantu Gheorghe</option>
+    <option value="Sibiu">Sibiu</option>
+    <option value="Sighetu Marmatiei">Sighetu Marmatiei</option>
+    <option value="Sighisoara">Sighisoara</option>
+    <option value="Simeria">Simeria</option>
+    <option value="Sinaia">Sinaia</option>
+    <option value="Siret">Siret</option>
+    <option value="Slanic">Slanic</option>
+    <option value="Slanic-Moldova">Slanic-Moldova</option>
+    <option value="Slatina">Slatina</option>
+    <option value="Slobozia">Slobozia</option>
+    <option value="Solca">Solca</option>
+    <option value="Somcuta Mare">Somcuta Mare</option>
+    <option value="Sovata">Sovata</option>
+    <option value="Stefanesti">Stefanesti</option>
+    <option value="Stefanesti">Stefanesti</option>
+    <option value="Stei">Stei</option>
+    <option value="Strehaia">Strehaia</option>
+    <option value="Suceava">Suceava</option>
+    <option value="Sulina">Sulina</option>
+    <option value="Talmaciu">Talmaciu</option>
+    <option value="Tandarei">Tandarei</option>
+    <option value="Targoviste">Targoviste</option>
+    <option value="Targu Bujor">Targu Bujor</option>
+    <option value="Targu Carbunesti">Targu Carbunesti</option>
+    <option value="Targu Frumos">Targu Frumos</option>
+    <option value="Targu Jiu">Targu Jiu</option>
+    <option value="Targu Lapus">Targu Lapus</option>
+    <option value="Targu Mures">Targu Mures</option>
+    <option value="Targu Neamt">Targu Neamt</option>
+    <option value="Targu Ocna">Targu Ocna</option>
+    <option value="Targu Secuiesc">Targu Secuiesc</option>
+    <option value="Tarnaveni">Tarnaveni</option>
+    <option value="Tasnad">Tasnad</option>
+    <option value="Tautii-Magheraus">Tautii-Magheraus</option>
+    <option value="Techirghiol">Techirghiol</option>
+    <option value="Tecuci">Tecuci</option>
+    <option value="Teius">Teius</option>
+    <option value="Ticleni">Ticleni</option>
+    <option value="Timisoara">Timisoara</option>
+    <option value="Tismana">Tismana</option>
+    <option value="Titu">Titu</option>
+    <option value="Toplita">Toplita</option>
+    <option value="Topoloveni">Topoloveni</option>
+    <option value="Tulcea">Tulcea</option>
+    <option value="Turceni">Turceni</option>
+    <option value="Turda">Turda</option>
+    <option value="Turnu Magurele">Turnu Magurele</option>
+    <option value="Ulmeni">Ulmeni</option>
+    <option value="Ungheni">Ungheni</option>
+    <option value="Uricani">Uricani</option>
+    <option value="Urlati">Urlati</option>
+    <option value="Urziceni">Urziceni</option>
+    <option value="Valea lui Mihai">Valea lui Mihai</option>
+    <option value="Valenii de Munte">Valenii de Munte</option>
+    <option value="Vanju Mare">Vanju Mare</option>
+    <option value="Vascau">Vascau</option>
+    <option value="Vaslui">Vaslui</option>
+    <option value="Vatra Dornei">Vatra Dornei</option>
+    <option value="Vicovu de Sus">Vicovu de Sus</option>
+    <option value="Victoria">Victoria</option>
+    <option value="Videle">Videle</option>
+    <option value="Viseu de Sus">Viseu de Sus</option>
+    <option value="Vlahita">Vlahita</option>
+    <option value="Voluntari">Voluntari</option>
+    <option value="Vulcan">Vulcan</option>
+    <option value="Zalau">Zalau</option>
+    <option value="Zarnesti">Zarnesti</option>
+    <option value="Zimnicea">Zimnicea</option>
+    <option value="Zlatna">Zlatna</option>
+    <option value="Simleu Silvaniei">Simleu Silvaniei</option>
+</datalist>
+
+
+            <label for="nume"><b>Nume Interlocutor:</b></label>
+            <input type="text" id="nume" name="nume">
+
+            <label for="telefon"><b>Număr Telefon:</b></label>
+            <input type="tel" id="telefon" name="telefon" placeholder="Tastează numărul de telefon">
+
+            <label for="email"><b>Adresă Email:</b></label>
+            <input type="email" id="email" name="email" placeholder="Tastează adresa de email">
+
+            <label for="functie"><b>Functie:</b></label>
+            <select id="functie" name="functie">
+                <option value="Manager spital">Manager spital</option>
+                <option value="Medic șef secție">Medic șef secție</option>
+                <option value="Medic">Medic</option>
+                <option value="Asistent șef">Asistent șef</option>
+                <option value="Asistent">Asistent</option>
+                <option value="Rezident">Rezident</option>
+                <option value="Director medical">Director medical</option>
+                <option value="Inginer spital">Inginer spital</option>
+            </select>            
+
+            <label for="nr_total_paturi_spital"><b>Nr. Total Paturi Spital:</b></label>
+            <input type="number" id="nr_total_paturi_spital" name="nr_total_paturi_spital">
+
+            <label for="nr_saloane_ati"><b>Nr. Saloane ATI:</b></label>
+            <input type="number" id="nr_saloane_ati" name="nr_saloane_ati">
+
+            <label for="nr_paturi_ati"><b>Nr. Paturi ATI:</b></label>
+            <input type="number" id="nr_paturi_ati" name="nr_paturi_ati">
+
+            <label for="subordinea"><b>Spital în Subordinea:</b></label>
+            <select id="subordinea" name="subordinea">
+                <option value="Consiliul Local">Consiliul Local</option>
+                <option value="Ministerul Sănătății">Ministerul Sănătății</option>
+                <option value="Ministerul Apararii Nationale">Ministerul Apararii Nationale</option>
+                <option value="Ministerul Afacerilor Interne">Ministerul Afacerilor Interne</option> 
+                <option value="Autoritățile Publice Locale (Consilii Județene și Primării)">Autoritățile Publice Locale (Consilii Județene și Primării)</option> 
+                <option value="Ministerul Justiției">Ministerul Justiției</option>
+                <option value="Ministerul Muncii și Protecției Sociale">Ministerul Muncii și Protecției Sociale</option>
+                <option value="Ministerul Educației">Ministerul Educației</option>
+                <option value="Ministerul Economiei, Antreprenoriatului și Turismului">Ministerul Economiei, Antreprenoriatului și Turismului</option>
+                <option value="Ministerul Agriculturii și Dezvoltării Rurale">Ministerul Agriculturii și Dezvoltării Rurale</option>
+                <option value="Instituții private sau ONG-urii">Instituții private sau ONG-urii</option>                      
+ 
+                
+                <option value="Altele">Altele</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Section: Informații Dispozitive Medicale -->
+    <div class="section">
+        <div class="section-title" onclick="toggleSection(this)">Informații Dispozitive Medicale 
+            <button class="toggle-btn">+/-</button>
+        </div>
+        <div class="section-content">
+            <div id="equipments-section" class="equipments-section">
+                <!-- Echipamente vor fi adăugate aici dinamic -->
+            </div>
+            <button type="button" class="btn" onclick="addEquipment()">Adauga echipament</button>
+        </div>
+    </div>
+
+    <!-- Section: Dotari Salon -->
+    <div class="section">
+        <div class="section-title" onclick="toggleSection(this)">Dotari Salon 
+            <button class="toggle-btn">+/-</button>
+        </div>
+        <div class="section-content">
+            <label for="dotari_salon"><b>Dotari salon:</b></label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="prize_lan" name="dotari_salon" value="Prize LAN"> Prize LAN</label>
+                <label><input type="checkbox" id="wifi" name="dotari_salon" value="WiFi"> WiFi</label>
+                <label><input type="checkbox" id="230v" name="dotari_salon" value="230V"> 230V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Sistem Informatic & IT Services -->
+    <div class="section">
+        <div class="section-title" onclick="toggleSection(this)">Sistem Informatic & Serviciul IT 
+            <button class="toggle-btn">+/-</button>
+        </div>
+        <div class="section-content">
+            <label for="sistem_informatic"><b>Tip sistem informatic:</b></label>
+           <input list="sistem_informatic_list" id="sistem_informatic" name="sistem_informatic" placeholder="Selectează sau tastează">
+<datalist id="sistem_informatic_list">
+    <option value="InfoWorld">
+    <option value="ATLASMED">
+    <option value="Hipocrate">
+    <option value="Extranet">
+</datalist>
+
+
+            <label for="sistem_pacs"><b>Sistem PACS:</b></label>
+            <input type="text" id="sistem_pacs" name="sistem_pacs">
+
+            <label for="serviciu_it"><b>Serviciul IT:</b></label>
+            <input list="serviciu_it_list" id="serviciu_it" name="serviciu_it" placeholder="Selectează sau tastează">
+<datalist id="serviciu_it_list">
+    <option value="intern">
+    <option value="externalizat">
+</datalist>
+
+        </div>
+    </div>
+
+    <!-- Section: Proiecte si Finantare -->
+    <div class="section">
+        <div class="section-title" onclick="toggleSection(this)">Proiecte si Finantare 
+            <button class="toggle-btn">+/-</button>
+        </div>
+        <div class="section-content">
+            <label for="proiecte_derulare"><b>Proiecte in derulare:</b></label>
+            <textarea id="proiecte_derulare" name="proiecte_derulare"></textarea>
+
+            <label for="proiecte_viitoare"><b>Proiecte viitoare:</b></label>
+            <textarea id="proiecte_viitoare" name="proiecte_viitoare"></textarea>
+
+            <label for="pnrr"><b>Spital cuprins în PNNR:</b></label>
+            <select id="pnrr" name="pnrr">
+                <option value="Da">Da</option>
+                <option value="Nu">Nu</option>
+            </select>
+
+            <label for="tip_finantare"><b>Tip Finanțare:</b></label>
+            <textarea id="tip_finantare" name="tip_finantare"></textarea>
+        </div>
+    </div>
+
+    <!-- Section: Expectante & Probleme -->
+    <div class="section">
+        <div class="section-title" onclick="toggleSection(this)">Expectante & Probleme 
+            <button class="toggle-btn">+/-</button>
+        </div>
+        <div class="section-content">
+            <label for="expectante"><b>Expectante:</b></label>
+            <textarea id="expectante" name="expectante"></textarea>
+
+            <label for="probleme"><b>Probleme identificate:</b></label>
+            <textarea id="probleme" name="probleme"></textarea>
+        </div>
+    </div>
+
+    <button class="btn" onclick="generatePDF()">Salveaza ca PDF</button>
+</div>
+
+<script>
+    let equipmentCounter = 0;
+
+    function addEquipment() {
+        equipmentCounter++;
+        const equipmentSection = document.getElementById('equipments-section');
+
+        const equipmentDiv = document.createElement('div');
+        equipmentDiv.setAttribute('id', `equipment-${equipmentCounter}`);
+        equipmentDiv.style.marginBottom = '20px';
+
+        const labelTipDispozitiv = document.createElement('label');
+        labelTipDispozitiv.innerHTML = `<b>Tip Dispozitiv ${equipmentCounter}:</b>`;
+        equipmentDiv.appendChild(labelTipDispozitiv);
+
+        const inputTipDispozitiv = document.createElement('input');
+        inputTipDispozitiv.setAttribute('list', `tip_dispozitiv_list_${equipmentCounter}`);
+        inputTipDispozitiv.name = `tip_dispozitiv_${equipmentCounter}`;
+        inputTipDispozitiv.placeholder = 'Selectează sau tastează tipul dispozitivului';
+        equipmentDiv.appendChild(inputTipDispozitiv);
+
+        const datalistTipDispozitiv = document.createElement('datalist');
+        datalistTipDispozitiv.id = `tip_dispozitiv_list_${equipmentCounter}`;
+        datalistTipDispozitiv.innerHTML = `
+             <option value="Aparat de anestezie">
+            <option value="Aplicatie software">
+            <option value="Analizator chimie sange">
+            <option value="Glucometru">
+            <option value="Cântar">
+            <option value="Cardiotocograf">
+            <option value="Sistem de monitorizare centrală">
+            <option value="Electrocardiograf">
+            <option value="Sistem de dializă">
+            <option value="Incubator">
+            <option value="Pompă de infuzie">
+            <option value="Monitor">
+            <option value="Ventilator">
+            <option value="Ecograf">
+        `;
+        equipmentDiv.appendChild(datalistTipDispozitiv);
+
+        const labelProducatorDispozitiv = document.createElement('label');
+        labelProducatorDispozitiv.innerHTML = `<b>Producător Dispozitiv ${equipmentCounter}:</b>`;
+        equipmentDiv.appendChild(labelProducatorDispozitiv);
+
+        const inputProducatorDispozitiv = document.createElement('input');
+        inputProducatorDispozitiv.setAttribute('list', `producator_dispozitiv_list_${equipmentCounter}`);
+        inputProducatorDispozitiv.name = `producator_dispozitiv_${equipmentCounter}`;
+        inputProducatorDispozitiv.placeholder = 'Selectează sau tastează producătorul dispozitivului';
+        equipmentDiv.appendChild(inputProducatorDispozitiv);
+
+        const datalistProducatorDispozitiv = document.createElement('datalist');
+        datalistProducatorDispozitiv.id = `producator_dispozitiv_list_${equipmentCounter}`;
+        datalistProducatorDispozitiv.innerHTML = `
+            <option value="Dräger">
+            <option value="GE Healthcare">
+            <option value="Siemens">
+            <option value="Philips Healthcare">
+            <option value="Mindray">
+            <option value="B Braun">
+            <option value="Fresenius Kabi">
+            <option value="Abbott">
+            <option value="IDMed">
+            <option value="Comen">
+            <option value="Hamilton">
+            <option value="Maquet">
+            <option value="Hamilton">
+            <option value="Comen">
+            <option value="Edan">
+            <option value="Acutronic">
+            <option value="Schiller">
+            <option value="Baxter">
+            <option value="Mortara">
+            <option value="Carefusion">
+            <option value="Covidien">
+            <option value="Spacelabs">
+
+            
+        `;
+        equipmentDiv.appendChild(datalistProducatorDispozitiv);
+
+        const labelNrDispozitive = document.createElement('label');
+        labelNrDispozitive.innerHTML = `<b>Număr Dispozitive ${equipmentCounter}:</b>`;
+        equipmentDiv.appendChild(labelNrDispozitive);
+
+        const inputNrDispozitive = document.createElement('input');
+        inputNrDispozitive.setAttribute('type', 'number');
+        inputNrDispozitive.name = `nr_dispozitive_${equipmentCounter}`;
+        inputNrDispozitive.placeholder = 'Introduceți numărul de dispozitive';
+        equipmentDiv.appendChild(inputNrDispozitive);
+
+        equipmentSection.appendChild(equipmentDiv);
+    }
+
+    function toggleSection(section) {
+        const content = section.nextElementSibling;
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+
+    function eliminaDiacritice(text) {
+        const diacriticeMap = {
+            'ă': 'a', 'â': 'a', 'î': 'i', 'ș': 's', 'ț': 't',
+            'Ă': 'A', 'Â': 'A', 'Î': 'I', 'Ș': 'S', 'Ț': 'T'
+        };
+        return text.replace(/[ăâîșțĂÂÎȘȚ]/g, match => diacriticeMap[match]);
+    }
+
+    function generatePDF() {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+
+        let yPosition = 20;
+
+        // Extracting values from form and removing diacritice
+        const spital = eliminaDiacritice(document.getElementById('spital').value);
+        const locatie = eliminaDiacritice(document.getElementById('locatie').value);
+        const nume = eliminaDiacritice(document.getElementById('nume').value);
+        const telefon = document.getElementById('telefon').value;
+        const email = eliminaDiacritice(document.getElementById('email').value);
+        const functie = eliminaDiacritice(document.getElementById('functie').value);
+        const nr_total_paturi = document.getElementById('nr_total_paturi_spital').value;
+        const nr_saloane_ati = document.getElementById('nr_saloane_ati').value;
+        const nr_paturi_ati = document.getElementById('nr_paturi_ati').value;
+        const subordinea = eliminaDiacritice(document.getElementById('subordinea').value);
+        const sistem_informatic = eliminaDiacritice(document.getElementById('sistem_informatic').value);
+        const sistem_pacs = eliminaDiacritice(document.getElementById('sistem_pacs').value);
+        const serviciu_it = eliminaDiacritice(document.getElementById('serviciu_it').value);
+        const proiecte_derulare = eliminaDiacritice(document.getElementById('proiecte_derulare').value);
+        const proiecte_viitoare = eliminaDiacritice(document.getElementById('proiecte_viitoare').value);
+        const pnrr = eliminaDiacritice(document.getElementById('pnrr').value);
+        const tip_finantare = eliminaDiacritice(document.getElementById('tip_finantare').value);
+        const expectante = eliminaDiacritice(document.getElementById('expectante').value);
+        const probleme = eliminaDiacritice(document.getElementById('probleme').value);
+
+        doc.text("Raport Clienti Clinomic Romania, Congres GPATI 2024", 20, yPosition);
+        yPosition += 10;
+        doc.text("Spital: " + spital, 20, yPosition);
+        yPosition += 10;
+        doc.text("Locatie: " + locatie, 20, yPosition);
+        yPosition += 10;
+        doc.text("Nume Interlocutor: " + nume, 20, yPosition);
+        yPosition += 10;
+        doc.text("Telefon: " + telefon, 20, yPosition);
+        yPosition += 10;
+        doc.text("Email: " + email, 20, yPosition);
+        yPosition += 10;
+        doc.text("Functie: " + functie, 20, yPosition);
+        yPosition += 10;
+        doc.text("Nr. Total Paturi: " + nr_total_paturi, 20, yPosition);
+        yPosition += 10;
+        doc.text("Nr. Saloane ATI: " + nr_saloane_ati, 20, yPosition);
+        yPosition += 10;
+        doc.text("Nr. Paturi ATI: " + nr_paturi_ati, 20, yPosition);
+        yPosition += 10;
+        doc.text("Subordinea: " + subordinea, 20, yPosition);
+        yPosition += 10;
+        doc.text("Sistem Informatic: " + sistem_informatic, 20, yPosition);
+        yPosition += 10;
+        doc.text("Sistem PACS: " + sistem_pacs, 20, yPosition);
+        yPosition += 10;
+        doc.text("Serviciu IT: " + serviciu_it, 20, yPosition);
+        yPosition += 10;
+        doc.text("Proiecte în derulare: " + proiecte_derulare, 20, yPosition);
+        yPosition += 10;
+        doc.text("Proiecte viitoare: " + proiecte_viitoare, 20, yPosition);
+        yPosition += 10;
+        doc.text("PNRR: " + pnrr, 20, yPosition);
+        yPosition += 10;
+        doc.text("Tip Finantare: " + tip_finantare, 20, yPosition);
+        yPosition += 10;
+        doc.text("Expectante: " + expectante, 20, yPosition);
+        yPosition += 10;
+        doc.text("Probleme: " + probleme, 20, yPosition);
+        yPosition += 10;
+
+        // Loop through each equipment added
+        for (let i = 1; i <= equipmentCounter; i++) {
+            const tipDispozitiv = eliminaDiacritice(document.querySelector(`input[name="tip_dispozitiv_${i}"]`).value.trim());
+            const producatorDispozitiv = eliminaDiacritice(document.querySelector(`input[name="producator_dispozitiv_${i}"]`).value.trim());
+            const nrDispozitive = document.querySelector(`input[name="nr_dispozitive_${i}"]`).value.trim();
+
+            if (tipDispozitiv !== "" && producatorDispozitiv !== "") {
+                doc.text(`Tip Dispozitiv ${i}: ` + tipDispozitiv, 20, yPosition);
+                yPosition += 10;
+                doc.text(`Producator Dispozitiv ${i}: ` + producatorDispozitiv, 20, yPosition);
+                yPosition += 10;
+                doc.text(`Numar Dispozitive ${i}: ` + nrDispozitive, 20, yPosition);
+                yPosition += 10;
+
+                if (yPosition > 280) {
+                    doc.addPage();
+                    yPosition = 20;
+                }
+            }
+        }
+
+        const fileName = `raport_clienti_${spital.replace(/\s+/g, '_').toLowerCase()}.pdf`;
+        doc.save(fileName);
+    }
+</script>
+
+</body>
+</html>
